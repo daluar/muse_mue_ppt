@@ -466,7 +466,7 @@ body {
   bottom: 8px;
   z-index: 31;
   font-family: Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 12px;
   line-height: 1;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.4);
@@ -1589,9 +1589,3 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
-
-/*********************************************
- * MIS CAMBIOS
- *********************************************/
-
-  .reveal section img { background:none; border:none; box-shadow:none; }
