@@ -20,11 +20,8 @@ html * {
 
 
 body {
-  /* background: #21252B; /* #21252B; */ */
-  background-color: #000000;
-  background-image: url("bg_int.png");
-  background-position: top;
-  background-size: cover;
+  background: #21252B; /* #000000; */
+  background-color: #21252B; /* #000000; */
   font-family: 'Lato', sans-serif;
 }
 .light {
@@ -42,11 +39,10 @@ body {
 
 .reveal {
   font-family: "Lato", sans-serif;
-  font-size: 33px;
+  font-size: 35px;
   /* font-weight: normal; */
   font-weight: 300;
   /* color: #2C313B; } */
-  text-shadow: 0px 0px 10px #000000;
   color: #FFFFFF; }
 
 ::selection {
@@ -88,44 +84,38 @@ body {
 .reveal h1 {
   font-size: 3.77em;
   font-weight: 400;
+  background: #d33682;
+  color: #268bd2;
+  /* text-shadow: x y blur color; */
+  text-shadow: 0px 0px 8px #000;
+  /* text-shadow: none;  */
 }
 
 .reveal h2 {
-  font-size: 2.1em;
+  font-size: 2em;
   /* text-shadow: x y blur color; */
-  /* text-shadow: 0px 0px 20px #268bd2; */
+  /* text-shadow: 5px 5px 2px #000; */
   font-weight: 400;
-    text-shadow: 0px 0px 20px #000000;
-  /* color: #268bd2; */
-  /* background: white; */
-  /* background-color: green; */
-  /* text-transform: uppercase; */
-  /* text-decoration: overline underline; */
-  /* text-decoration: underline; */
-  /* text-decoration-style: wavy; */
+  color: #268bd2;
 }
 
 .reveal h3 {
   font-size: 1.55em;
   /* text-shadow: 0px 0px 5px #000; */
   font-weight: 400;
-  text-transform: uppercase;
-  text-decoration: underline;
-  text-decoration-style: solid;
+  color: #268bd2;
 }
 
 .reveal h4 {
   font-size: 1em;
   font-weight: 400;
-  text-decoration: underline;
+  color: #268bd2;
 }
 
 .reveal h5 {
-  /* text-shadow: x y blur color; */
-  /* text-shadow: 0px 0px 8px #000; */
-  /* text-shadow: none;  */
   font-size: 1em;
   font-weight: 400;
+  color: #268bd2;
 }
 
 /*********************************************

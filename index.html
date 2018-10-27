@@ -17,6 +17,8 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/mitema.css" id="theme">
+		<!-- <link rel="stylesheet" href="css/theme/mitema-resalta.css" id="theme"> -->
+		<!-- <link rel="stylesheet" href="css/theme/mitema-blue.css" id="theme"> -->
 		<!-- <link rel="stylesheet" href="css/theme/night.css" id="theme"> -->
 
 		<!-- Theme used for syntax highlighting of code -->
@@ -62,10 +64,11 @@
 
 						<!-- <h3> Effects on spacecraft materials </h3> -->
 
-						<div style="text-shadow: 0px 0px 8px #000;font-size: 1.55em;font-weight: normal">
+						<div style="text-shadow: 0px 0px 10px #000;font-size: 1.5em;font-weight: normal">
 						<p> Effects on spacecraft materials </p></div>
 
-						<h1> Atomic Oxygen </h1>
+						<div style="text-shadow: 0px 0px 10px #000;font-size: 3.2em;font-weight: normal">
+						<p> Atomic Oxygen </p></div>
 
 						<!-- <hr width="75%" size="5px" color=#2C313B> -->
 						<!-- <hr width="80%" size="5px" color=#FFFFFF> -->
@@ -75,25 +78,25 @@
 						<br> </br>
 
 						<div align="right">
-							<p style="text-shadow: 0px 0px 8px #000;">Daniel <b>Lubián Arenillas</b></p>
+							<p style="text-shadow: 0px 0px 10px #000;">Daniel <b>Lubián Arenillas</b></p>
 
-							<p style="text-shadow: 0px 0px 8px #000;">29 October 2019</p>
+							<p style="text-shadow: 0px 0px 10px #000;">29 October 2019</p>
 						</div>
 
 					</section>
 				</section>
+
 				<section>
 					<h2>Contents</h2>
-					<span class="fragment highlight-blue">LEO environment</span>
-
+					<p>LEO environment</p>
+					<!-- <span class="fragment highlight-blue">LEO environment</span> -->
 					<p>Atomic oxygen</p>
 					<p>Effects on materials</p>
 					<p>Mitigation solutions</p>
 					<p>Conclusions</p>
-
 				</section>
 
-				<section>
+				<section id="leo">
 					<h2> LEO environment </h2>
 					<section>
 						<div id="contentBox" style="margin:0px auto; width:70%">
@@ -115,16 +118,16 @@
 						<!-- <h2>↓</h2> -->
 					</section>
 					<section>
-						<h3>↓</h3>
+						<p style="font-size:1.5em;font-weight: normal;">↓</p>
 						<p>Corrosion</p>
 						<p>Erosion</p>
 						<p>Structure modification</p>
 						<p>Surface roughening</p>
-						<h3>↓</h3>
+						<p class="fragment" style="font-size:1.5em;font-weight: normal;">↓</p>
 					</section>
 					<section>
-						<h3>↓</h3>
-						<h3>Properties</h3>
+						<p style="font-size:1.5em;font-weight: normal;">↓</p>
+						<p style="font-size:1.5em;font-weight: normal;"> Properties</p>
 							<p>Optical</p>
 							<p>Thermal</p>
 							<p>Electrical</p>
@@ -133,94 +136,124 @@
 				</section>
 
 
-				<section>
+				<!-- <section>
 					<h2>Contents</h2>
 					<p>LEO environment</p>
 					<span class="fragment highlight-blue">Atomic oxygen</span>
 					<p>Effects on materials</p>
 					<p>Mitigation solutions</p>
 					<p>Conclusions</p>
-				</section>
+				</section> -->
 
-				<section>
+				<section id="atox">
 					<h2>Atomic oxygen</h2>
 					<section data-background-iframe="./bg/mibg.html">
 						<br>
 						<p>O<sub>2</sub> + UV radiation</p>
+						<span class="fragment">
 						<div id="contentBox" style="margin:0px auto; width:50%">
 							<div id="column1" style="float:left; margin:0; width:50%;">
 								<p>↓</p>
 								<p>2 O·</p>
 								<p><sub>(99%)</sub></p>
 							</div>
+						</span>
+						<span class="fragment">
 							<div id="column2" style="float:left; margin:0;width:50%;">
 								<p>↓</p>
 								<p>O⁺ + O⁻</p>
 								<p><sub>(1%)</sub></p>
 							</div>
+						</span>
 					</section>
 					<section>
 						<p>Present in upper atmosphere</p>
 						<p>200 - 700 km → most important species</p>
 						<br>
+						<p class="fragment">Density</p>
+						<span class="fragment">
+						<p>↑</p>
 						<p>Altitude, solar activity, time of year, orbit inclination</p>
-						<p>↓</p>
-						<p>Density</p>
+						</span>
 					</section>
 					<section>
 						<img width=70% data-src="img/ao/density.png">
-						<p style="font-size: 0.5em"><b>Fig. 1</b> - Atomic oxygen flux versus altitude. Adapted from [2].</p>
+						<p style="font-size: 0.7em"><b>Fig. 1</b> - Atomic oxygen flux versus altitude. Adapted from [2].</p>
 					</section>
 					<section>
-						<p>Very reactive: O· , O⁺ , O⁻</p>
-						<p>+</p>
-						<p>UV radiation weakens molecular bonds</p>
+						<p>O· , O⁺ , O⁻</p>
+						<p>Very reactive</p>
+						<p class="fragment">+</p>
+						<p class="fragment">UV radiation weakens molecular bonds</p>
 					</section>
 					<section>
 						<p>Relative velocity spacecraft-ATOX very high</p>
-						<p>↓</p>
-						<p>High collision energy</p>
-						<p>↓</p>
-						<p>Increased reactivity</p>
+						<span class="fragment"><p>↓</p>
+						<p>High collision energy</p></span>
+						<span class="fragment"><p>↓</p>
+						<p>Increased reactivity</p></span>
 					</section>
 					<section>
-						<!-- FIXME: glow img -->
-						<img height=800px data-src="img/ao/glow.png">
-						<p style="font-size: 0.5em"><b>Fig. 2</b> - Low Earth orbital glow phenomena. Extracted from [2].</p>
+						<img width=80% data-src="img/ao/glow.png">
+						<p style="font-size: 0.7em"><b>Fig. 2</b> - Low Earth orbital glow phenomena. Extracted from [2].</p>
 					</section>
 				</section>
 
-				<section>
+				<!-- <section>
 					<h2>Contents</h2>
 					<p>LEO environment</p>
 					<p>Atomic oxygen</p>
 					<span class="fragment highlight-blue">Effects on materials</span>
 					<p>Mitigation solutions</p>
 					<p>Conclusions</p>
-				</section>
+				</section> -->
 
-				<section>
+				<section id="metals">
+					<h2>Effects on metals</h2>
 					<section>
-						<h2>Effects on metals</h2>
 						<p>In general, no macroscopic effects</p><br>
-						<p>Silver and osmium react very rapidly</p><br>
+						<span class="fragment">
 						<p>Most aluminium alloys are resistant, but</p>
 						<p>2090 Al-Li</p>
 						<p>↓ </p>
-  					<p>loss in superficial Li</p>
+  					<p>loss in superficial Li</p></span>
+						<span class="fragment"><br>
+						<p>Silver and osmium react very rapidly</p>
+						</span>
 					</section>
 					<section>
 						<img width=70% data-src="img/effects/osmium.png">
-						<p style="font-size: 0.5em"><b>Fig. 3</b> - Effect of low earth orbit environment on the reflectance spectrum of exposed and masked portions of a 200 Å thick osmium film with chromium undercoat. Extracted from [4].</p>
+						<p style="font-size: 0.7em"><b>Fig. 3</b> - Effect of LEO environment on the reflectance spectrum of exposed and masked portions of a 200 Å thick osmium film with chromium undercoat. Extracted from [4].</p>
+					</section>
+					<section>
+						<img width=70% data-src="img/effects/silver.png">
+						<p style="font-size: 0.7em"><b>Fig. 4</b> - Silver interconnector (25 μm) retrieved from Eureca. Extracted from [6].</p>
 					</section>
 				</section>
 
-				<section>
+				<section id="organic">
 					<h2>Effects on organic components</h2>
 
 					<section>
-						<!-- TODO: imagen reacciones organicas -->
-						IMAGEN REACCIONES
+						<img width=70% data-src="img/effects/orgchem.png">
+						<p style="font-size: 0.7em"><b>Fig. 5</b> -  Atomic oxygen reaction pathways with polymers. Extracted from [2].</p>
+					</section>
+
+					<section>
+						<img width=70% data-src="img/effects/interaction.png">
+						<p style="font-size: 0.7em"><b>Fig. 6</b> -  Interaction of atomic oxygen with organic materials. Extracted from [7].</p>
+					</section>
+
+					<section>
+						<img width=70% data-src="img/effects/erosion.png">
+						<p style="font-size: 0.7em"><b>Fig. 7</b> -   Chlorotrifluoroethylene after an atomic oxygen fluence of 8.99×10<sup>21</sup> atoms/cm<sup>2</sup> at 8.1 degrees off ram. Extracted from [4].</p>
+					</section>
+
+					<section>
+						<div class="bottom">
+						<img width=90% data-src="img/effects/erosion4.png">
+						<p style="font-size: 0.7em"><b>Fig. 8</b> -  Extracted from [8].</p>
+						</div>
 					</section>
 
 					<section>
@@ -234,66 +267,74 @@
 							<li>Aluminized Kapton</li>
 						</ul>
 					</section>
+
 					<section>
 						<h3>Thermal control</h3>
 						<h4>Organic paints</h4>
+						<p>Parabolic communication antennae</p>
+						<p>Rear side of solar panels</p>
 						<ul>
-							<li>Parabolic communication antennae (white paint)</li>
-							<li>Rear side of solar panels</li>
 							<li>White paint: Chemglaze A276 = TiO<sub>2</sub> + polyurethane</li>
 							<li>Black paint: Chemglaze Z302 = C + polyurethane</li>
 						</ul>
 					</section>
 					<section>
-						 <!-- TODO: IMAGEN EROSION -->
-						 IMAGEN EROSION
-					</section>
-					<section>
-						<h3>Solar cells</h3>
-						<!-- TODO solar cells -->
+						<h3>Solar panels</h3>
+						<p>Honeycomb sandwich structure: glass fibre + aluminium</p>
+						<p>Kapton</p>
+						<p>Silver conectors</p>
+						<p>MgF<sub>2</sub>: antireflection coating </p>
 					</section>
 					</section>
 
-				<section>
+				<!-- <section>
 					<h2>Contents</h2>
 					<p>LEO environment</p>
 					<p>Atomic oxygen</p>
 					<p>Effects on materials</p>
 					<span class="fragment highlight-blue">Mitigation solutions</span>
 					<p>Conclusions</p>
-				</section>
+				</section> -->
 
-				<section>
-					<h3>Mitigation solutions</h3>
+				<section id="solutions">
+					<h2>Mitigation solutions</h2>
 					<section>
-						<!-- TODO: mitigation solutions -->
+						<h5>Application of thin film protective coatings made of atomic oxygen durable materials</h5>
+						<p>100 - 600 nm</p>
+						<p>SiO<sub>2</sub>, Al<sub>2</sub>O<sub>3</sub>, In, Ge, Al, Au...</p>
+						<p>Sputter or vapor deposition</p>
+						<!-- NOTE: use in ISS -->
 					</section>
 					<section>
-
+						<h5>Modification of the surface of the polymers to make them more durable to atomic oxygen</h5>
+					</section>
+					<section>
+						<h5>Use of alternative polymers that contain metal atoms which develop a protective coating with atomic oxygen exposure</h5>
 					</section>
 				</section>
 
-				<section>
+				<!-- <section>
 					<h2>Contents</h2>
 					<p>LEO environment</p>
 					<p>Atomic oxygen</p>
 					<p>Effects on materials</p>
 					<p>Mitigation solutions</p>
 					<span class="fragment highlight-blue">Conclusions</span>
+				</section> -->
+
+				<section id="conclusions">
+					<h2>Conclusions</h2>
+					<!-- <p align="left">ATOMIC OXYGEN</p> -->
+					<!-- <ul> -->
+						<p>Atomic oxygen is an important degradation agent in LEO</p>
+						<p>Atomic oxygen affects mainly organic components, key in thermal control and solar cells</p>
+						<p>Atomic oxygen effects can and should be mitigated in long missions</p>
+					<!-- </ul> -->
 				</section>
 
 				<section>
-					<h3>Conclusions</h3>
-					<p align="left">ATOMIC OXYGEN</p>
-					<ul>
-						<li>is an important degradation agent in LEO</li>
-						<li>affects mainly organic components, key in thermal control and solar cells</li>
-						<li>effects can and should be mitigated in long missions</li>
-					</ul>
-				</section>
-
-				<section>
-					<ol style="font-size: 0.7em">
+					<h2>References</h2>
+					<ol style="font-size: 0.65em">
 						<li>Banks, B. A., Rutledge, S. K., Brady, J. A., & Merrow, J. E. (1989). Atomic oxygen effects on materials.</li>
 						<li>Banks, B. A., de Groh, K. K., & Miller, S. K. (2004). Low earth orbital atomic oxygen interactions with spacecraft materials. <i>MRS Online Proceedings Library Archive</i>, 851.</li>
 						<li>Dooling, D., & Finckenor, M. M. (1999). Material selection guidelines to limit atomic oxygen effects on spacecraft surfaces.</li>
@@ -302,6 +343,8 @@
 						<li>de Rooij, A. (2010). Corrosion in space. <i>Encyclopedia of Aerospace Engineering</i>, 1-15.</li>
 						<li>Packirisamy, S., Schwam, D., & Litt, M. H. (1995). Atomic oxygen resistant coatings for low earth orbit space structures. <i>Journal of materials science</i>, 30(2), 308-320.</li>
 						<li>Zhao, X. H., Shen, Z. G., Xing, Y. S., & Ma, S. L. (2001). A study of the reaction characteristics and mechanism of Kapton in a plasma-type ground-based atomic oxygen effects simulation facility. <i>Journal of Physics D: Applied Physics</i>, 34(15), 2308.</li>
+						<!-- TODO: añadir ecss -->
+						<li>ECSS</li>
 					</ol>
 				</section>
 
