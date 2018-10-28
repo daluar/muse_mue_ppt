@@ -33,7 +33,6 @@
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 
-
 		<!-- TWO COLUMNS -->
 		<style type="text/css">
 			#wrap {
@@ -48,45 +47,45 @@
    			float:right;
    			width:39%;
 			}
-</style>
-
+		</style>
 
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-					<section data-background-iframe="./bg/portada.html">
-				<!-- <section data-background-iframe="../canvas-particle-network/mibg.html"> -->
-					<!-- <img width="40" height="50" data-src="../img/upm.png" alt="logo_upm"   >
-					<img width="60" height="40" data-src="../img/idr.png" alt="logo_idr"   >
-					<img width="70" height="30" data-src="../img/muse.png" alt="logo_muse" > -->
+
+				<section data-background-iframe="./bg/portada.html" id="portada">
+						<!-- <section data-background-iframe="../canvas-particle-network/mibg.html"> -->
+						<!-- <img width="40" height="50" data-src="../img/upm.png" alt="logo_upm"   >
+						<img width="60" height="40" data-src="../img/idr.png" alt="logo_idr"   >
+						<img width="70" height="30" data-src="../img/muse.png" alt="logo_muse" > -->
 					<section>
 
 						<!-- <h3> Effects on spacecraft materials </h3> -->
 
 						<div style="text-shadow: 0px 0px 10px #000;font-size: 1.5em;font-weight: normal">
-						<p> Effects on spacecraft materials </p></div>
+							<p> Effects on spacecraft materials </p></div>
 
 						<div style="text-shadow: 0px 0px 10px #000;font-size: 3.2em;font-weight: normal">
-						<p> Atomic Oxygen </p></div>
+							<p> Atomic Oxygen </p></div>
 
-						<!-- <hr width="75%" size="5px" color=#2C313B> -->
-						<!-- <hr width="80%" size="5px" color=#FFFFFF> -->
+							<!-- <hr width="75%" size="5px" color=#2C313B> -->
+							<!-- <hr width="80%" size="5px" color=#FFFFFF> -->
 
-						<br> </br>
+							<br> </br>
 
-						<br> </br>
+							<br> </br>
 
-						<div align="right">
-							<p style="text-shadow: 0px 0px 10px #000;">Daniel <b>Lubián Arenillas</b></p>
+							<div align="right">
+								<p style="text-shadow: 0px 0px 10px #000;">Daniel <b>Lubián Arenillas</b></p>
 
-							<p style="text-shadow: 0px 0px 10px #000;">29 October 2019</p>
-						</div>
+								<p style="text-shadow: 0px 0px 10px #000;">29 October 2019</p>
+							</div>
 
 					</section>
 				</section>
 
-				<section>
+				<section id="Contents">
 					<h2>Contents</h2>
 					<p>LEO environment</p>
 					<!-- <span class="fragment highlight-blue">LEO environment</span> -->
@@ -99,7 +98,9 @@
 				</section>
 
 				<section id="leo">
+
 					<h2> LEO environment </h2>
+
 					<section>
 						<div id="contentBox" style="margin:0px auto; width:70%">
 	    				<div id="column1" style="float:left; margin:0; width:50%;">
@@ -118,7 +119,11 @@
 						</div>
 						<!-- <br></br> -->
 						<!-- <h2>↓</h2> -->
+						<aside class="notes">
+							Some damaging things in LEO environment
+						</aside>
 					</section>
+
 					<section>
 						<p style="font-size:1.5em;font-weight: normal;">↓</p>
 						<p>Corrosion</p>
@@ -126,30 +131,34 @@
 						<p>Structure modification</p>
 						<p>Surface roughening</p>
 						<p class="fragment" style="font-size:1.5em;font-weight: normal;">↓</p>
+						<aside class="notes">
+							Possible effects of those damaging things
+						</aside>
 					</section>
+
 					<section>
 						<p style="font-size:1.5em;font-weight: normal;">↓</p>
 						<p style="font-size:1.5em;font-weight: normal;"> Properties</p>
-							<p>Optical</p>
-							<p>Thermal</p>
-							<p>Electrical</p>
-							<p>Mechanical</p>
+						<p>Optical</p>
+						<p>Thermal</p>
+						<p>Electrical</p>
+						<p>Mechanical</p>
+						<aside class="notes">
+							<p>Optical: reflectance</p>
+							<p>Thermal: absorbance, emissivity,...</p>
+							<p>Electrical: charged particles, protective coatings</p>
+							<p>Mechanical: surface peeling, loss of alloying elements</p>
+						</aside>
 					</section>
+
 				</section>
 
-
-				<!-- <section>
-					<h2>Contents</h2>
-					<p>LEO environment</p>
-					<span class="fragment highlight-blue">Atomic oxygen</span>
-					<p>Effects on materials</p>
-					<p>Mitigation solutions</p>
-					<p>Conclusions</p>
-				</section> -->
-
 				<section id="atox">
+
 					<h2>Atomic oxygen</h2>
+
 					<section data-background-iframe="./bg/mibg.html">
+					<!-- <section> -->
 						<br>
 						<p>O<sub>2</sub> + UV radiation</p>
 						<span class="fragment">
@@ -167,7 +176,11 @@
 								<p><sub>(1%)</sub></p>
 							</div>
 						</span>
+						<aside class="notes">
+							description of the reaction
+						</aside>
 					</section>
+
 					<section>
 						<p>Present in upper atmosphere</p>
 						<p>200 - 700 km → most important species</p>
@@ -177,62 +190,64 @@
 						<p>↑</p>
 						<p>Altitude, solar activity, time of year, orbit inclination</p>
 						</span>
+						<aside class="notes">
+							<p>solar activity: levels of radiation</p>
+							<p>orbit inclination: ???????? </p>
+							<!-- FIXME: orbit inclination? -->
+						</aside>
 					</section>
+
 					<section>
 						<img width=70% data-src="img/ao/density.png">
 						<p style="font-size: 0.7em"><b>Fig. 1</b> - Atomic oxygen flux versus altitude. Adapted from [2].</p>
 					</section>
+
 					<section>
 						<p>O· , O⁺ , O⁻</p>
 						<p>Very reactive</p>
 						<p class="fragment">+</p>
 						<p class="fragment">UV radiation weakens molecular bonds</p>
 					</section>
+
 					<section>
 						<p>Relative velocity spacecraft-ATOX very high</p>
 						<span class="fragment"><p>↓</p>
 						<p>High collision energy</p></span>
 						<span class="fragment"><p>↓</p>
-						<p>Increased reactivity</p></span>
+						<p>More reactivity</p></span>
 					</section>
-					<section>
-						<img width=80% data-src="img/ao/glow.png">
-						<p style="font-size: 0.7em"><b>Fig. 2</b> - Low Earth orbital glow phenomena. Extracted from [2].</p>
-					</section>
-				</section>
 
-				<!-- <section>
-					<h2>Contents</h2>
-					<p>LEO environment</p>
-					<p>Atomic oxygen</p>
-					<span class="fragment highlight-blue">Effects on materials</span>
-					<p>Mitigation solutions</p>
-					<p>Conclusions</p>
-				</section> -->
+				</section>
 
 				<section id="metals">
 					<h2>Effects on metals</h2>
+
 					<section>
 						<p>In general, no macroscopic effects</p><br>
 						<span class="fragment">
-						<p>Most aluminium alloys are resistant, but</p>
-						<p>2090 Al-Li</p>
-						<p>↓ </p>
-  					<p>loss in superficial Li</p></span>
-						<span class="fragment"><br>
-						<p>Copper</p>
-						<span class="fragment"><br>
-						<p>Silver and osmium react very rapidly</p>
+							<p>Most aluminium alloys are resistant, but</p>
+							<p>2090 Al-Li → loss in superficial Li</p>
+							<!-- <p>↓ </p> -->
+  						<!-- <p>loss in superficial Li</p> -->
 						</span>
+						<span class="fragment"><br>
+							<p>Silver and osmium react very rapidly</p>
+						</span>
+						<aside class="notes">
+							Oxides, oxidation,...
+						</aside>
 					</section>
+
 					<section>
 						<img width=70% data-src="img/effects/osmium.png">
 						<p style="font-size: 0.7em"><b>Fig. 3</b> - Effect of LEO environment on the reflectance spectrum of exposed and masked portions of a 200 Å thick osmium film with chromium undercoat. Extracted from [4].</p>
 					</section>
+
 					<section>
 						<img width=70% data-src="img/effects/silver.png">
 						<p style="font-size: 0.7em"><b>Fig. 4</b> - Silver interconnector (25 μm) retrieved from Eureca. Extracted from [6].</p>
 					</section>
+
 				</section>
 
 				<section id="organic">
@@ -259,10 +274,18 @@
 						<p style="font-size: 0.7em"><b>Fig. 8</b> -  Extracted from [8].</p>
 						</div>
 					</section>
+
+					<section>
+						<img width=80% data-src="img/effects/glow.png">
+						<p style="font-size: 0.7em"><b>Fig. 2</b> - Low Earth orbital glow phenomena. Extracted from [2].</p>
+					</section>
+
 				</section>
 
-				<section>
+				<section id="examples">
+
 					<h2>Examples</h2>
+
 					<section>
 						<h3>Thermal control</h3>
 						<h4>Metallized polymer films</h4>
@@ -274,6 +297,7 @@
 							<li>Aluminized Kapton</li>
 						</ul>
 					</section>
+
 					<section>
 						<h3>Thermal control</h3>
 						<h4>Organic paints</h4>
@@ -284,6 +308,7 @@
 							<li>Black paint: Chemglaze Z302 = C + polyurethane</li>
 						</ul>
 					</section>
+
 					<section>
 						<h3>Solar panels</h3>
 						<p>Honeycomb sandwich structure: glass fibre + aluminium</p>
@@ -291,19 +316,13 @@
 						<p>Silver conectors</p>
 						<p>MgF<sub>2</sub>: antireflection coating </p>
 					</section>
+
 				</section>
 
-				<!-- <section>
-					<h2>Contents</h2>
-					<p>LEO environment</p>
-					<p>Atomic oxygen</p>
-					<p>Effects on materials</p>
-					<span class="fragment highlight-blue">Mitigation solutions</span>
-					<p>Conclusions</p>
-				</section> -->
-
 				<section id="solutions">
+
 					<h2>Possible solutions</h2>
+
 					<section>
 						<h5>Application of thin film protective coatings made of atomic oxygen durable materials</h5>
 						<p>100 - 600 nm</p>
@@ -311,22 +330,16 @@
 						<p>Sputter or vapor deposition</p>
 						<!-- NOTE: use in ISS -->
 					</section>
+
 					<section>
 						<h5>Modification of the surface of the polymers to make them more durable to atomic oxygen</h5>
 					</section>
+
 					<section>
 						<h5>Use of alternative polymers that contain metal atoms which develop a protective coating with atomic oxygen exposure</h5>
 					</section>
-				</section>
 
-				<!-- <section>
-					<h2>Contents</h2>
-					<p>LEO environment</p>
-					<p>Atomic oxygen</p>
-					<p>Effects on materials</p>
-					<p>Mitigation solutions</p>
-					<span class="fragment highlight-blue">Conclusions</span>
-				</section> -->
+				</section>
 
 				<section id="conclusions">
 					<h2>Conclusions</h2>
@@ -338,7 +351,7 @@
 					<!-- </ul> -->
 				</section>
 
-				<section>
+				<section id="References">
 					<h2>References</h2>
 					<ol style="font-size: 0.65em">
 						<li>Banks, B. A., Rutledge, S. K., Brady, J. A., & Merrow, J. E. (1989). Atomic oxygen effects on materials.</li>
@@ -353,54 +366,6 @@
 						<li>ECSS--Q--70--71A rev. 1 (18 June 2004)</li>
 					</ol>
 				</section>
-
-				<!-- <section>
-
-					<section>
-						<h2>
-							Slide 3
-						</h2>
-
-                        <p><iframe width="700" height="500" frameborder="0.5" scrolling="no" src="https://plot.ly/~danbul/3.embed"></iframe></p>
-					</section>
-
-					<section>
-						<h3>Vertical Slides 1</h3>
-						<p>Slides can be nested inside of each other.</p>
-						<p> $\vec F = m \vec a$ </p>
-						<br>
-					</section>
-
-					<section>
-							<h3>Vertical Slides 2</h3>
-							<p>Slides can be nested inside of each other.</p>
-							<p>Use the <em>Space</em> key to navigate through all slides.</p>
-							<br>
-					</section>
-
-				</section> -->
-
-				<!-- <section>
-					<section>
-						<h2>ggr</h2>
-						Probando...
-					</section>
-
-					<section data-markdown>
-						Probando las listas en md:
-
-						* initHighlightingOnLoad
-
-						* holac
-
-						* tkjhkjshah
-					</section>
-				</section> -->
-
-				<!-- <section>
-					<h2> Slide 5 </h2>
-					<p><iframe width="560" height="315" src="https://www.youtube.com/embed/Ef3JnV80hAE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
-				</section> -->
 
 			</div>
 		</div>
