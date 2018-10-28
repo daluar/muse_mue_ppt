@@ -26,12 +26,21 @@
 
 		<!-- Printing and PDF exports -->
 		<script>
+  		if( window.location.search.match( /print-pdf/gi ) ) {
+    		var link = document.createElement( 'link' );
+    		link.rel = 'stylesheet';
+    		link.type = 'text/css';
+    		link.href = 'pdf.css'; // Notice: I changed the path
+    		document.getElementsByTagName( 'head' )[0].appendChild( link );
+  		}
+		</script>
+		<!-- <script>
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+		</script> -->
 
 		<!-- TWO COLUMNS -->
 		<style type="text/css">
@@ -53,8 +62,9 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-
-				<section data-background-iframe="./bg/portada.html" id="portada">
+				<!-- <section style="background-size: cover;background-position: 50% 50%;background-image: url("./bg/portada.jpg")"> -->
+					<section data-background-iframe="./bg/portada.html" id="portada">
+					<!-- <section> -->
 						<!-- <section data-background-iframe="../canvas-particle-network/mibg.html"> -->
 						<!-- <img width="40" height="50" data-src="../img/upm.png" alt="logo_upm"   >
 						<img width="60" height="40" data-src="../img/idr.png" alt="logo_idr"   >
@@ -87,8 +97,8 @@
 
 				<section id="Contents">
 					<h2>Contents</h2>
+					<br>
 					<p>LEO environment</p>
-					<!-- <span class="fragment highlight-blue">LEO environment</span> -->
 					<p>Atomic oxygen</p>
 					<p>Effects on metals</p>
 					<p>Effects on organic substances</p>
@@ -197,7 +207,8 @@
 						</aside>
 					</section>
 
-					<section>
+					<section style="vertical-align: top">
+						<p></p>
 						<img width=70% data-src="img/ao/density.png">
 						<p style="font-size: 0.7em"><b>Fig. 1</b> - Atomic oxygen flux versus altitude. Adapted from [2].</p>
 					</section>
@@ -238,12 +249,14 @@
 						</aside>
 					</section>
 
-					<section>
+					<section style="vertical-align: top">
+						<p></p>
 						<img width=70% data-src="img/effects/osmium.png">
 						<p style="font-size: 0.7em"><b>Fig. 3</b> - Effect of LEO environment on the reflectance spectrum of exposed and masked portions of a 200 Å thick osmium film with chromium undercoat. Extracted from [4].</p>
 					</section>
 
-					<section>
+					<section style="vertical-align: top">
+						<p></p>
 						<img width=70% data-src="img/effects/silver.png">
 						<p style="font-size: 0.7em"><b>Fig. 4</b> - Silver interconnector (25 μm) retrieved from Eureca. Extracted from [6].</p>
 					</section>
@@ -253,29 +266,34 @@
 				<section id="organic">
 					<h2>Effects on organic substances</h2>
 
-					<section>
+					<section style="vertical-align: top">
+						<p></p>
 						<img width=70% data-src="img/effects/orgchem.png">
 						<p style="font-size: 0.7em"><b>Fig. 5</b> -  Atomic oxygen reaction pathways with polymers. Extracted from [2].</p>
 					</section>
 
-					<section>
+					<section style="vertical-align: top">
+						<p></p>
 						<img width=70% data-src="img/effects/interaction.png">
 						<p style="font-size: 0.7em"><b>Fig. 6</b> -  Interaction of atomic oxygen with organic materials. Extracted from [7].</p>
 					</section>
 
-					<section>
+					<section style="vertical-align: top">
+						<p></p>
 						<img width=70% data-src="img/effects/erosion.png">
 						<p style="font-size: 0.7em"><b>Fig. 7</b> -   Chlorotrifluoroethylene after an atomic oxygen fluence of 8.99×10<sup>21</sup> atoms/cm<sup>2</sup> at 8.1 degrees off ram. Extracted from [4].</p>
 					</section>
 
-					<section>
+					<section style="vertical-align: top">
+						<p></p>
 						<div class="bottom">
 						<img width=90% data-src="img/effects/erosion4.png">
 						<p style="font-size: 0.7em"><b>Fig. 8</b> -  Extracted from [8].</p>
 						</div>
 					</section>
 
-					<section>
+					<section style="vertical-align: top">
+						<p></p>
 						<img width=80% data-src="img/effects/glow.png">
 						<p style="font-size: 0.7em"><b>Fig. 2</b> - Low Earth orbital glow phenomena. Extracted from [2].</p>
 					</section>
@@ -351,9 +369,10 @@
 					<!-- </ul> -->
 				</section>
 
-				<section id="References">
+				<section id="References" style="vertical-align: top">
 					<h2>References</h2>
-					<ol style="font-size: 0.65em">
+					<p></p>
+					<ol style="font-size: 0.65em; vertical-align: top">
 						<li>Banks, B. A., Rutledge, S. K., Brady, J. A., & Merrow, J. E. (1989). Atomic oxygen effects on materials.</li>
 						<li>Banks, B. A., de Groh, K. K., & Miller, S. K. (2004). Low earth orbital atomic oxygen interactions with spacecraft materials. <i>MRS Online Proceedings Library Archive</i>, 851.</li>
 						<li>Dooling, D., & Finckenor, M. M. (1999). Material selection guidelines to limit atomic oxygen effects on spacecraft surfaces.</li>
@@ -362,9 +381,9 @@
 						<li>de Rooij, A. (2010). Corrosion in space. <i>Encyclopedia of Aerospace Engineering</i>, 1-15.</li>
 						<li>Packirisamy, S., Schwam, D., & Litt, M. H. (1995). Atomic oxygen resistant coatings for low earth orbit space structures. <i>Journal of materials science</i>, 30(2), 308-320.</li>
 						<li>Zhao, X. H., Shen, Z. G., Xing, Y. S., & Ma, S. L. (2001). A study of the reaction characteristics and mechanism of Kapton in a plasma-type ground-based atomic oxygen effects simulation facility. <i>Journal of Physics D: Applied Physics</i>, 34(15), 2308.</li>
-						<!-- TODO: añadir ecss -->
-						<li>ECSS--Q--70--71A rev. 1 (18 June 2004)</li>
+						<li>ECSS-Q-70-71A rev. 1 (18 June 2004)</li>
 					</ol>
+					<p></p>
 				</section>
 
 			</div>

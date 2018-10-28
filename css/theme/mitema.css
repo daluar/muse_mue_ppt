@@ -78,6 +78,7 @@ body {
   /* font-family: "League Gothic", Impact, sans-serif; */
   /* font-weight: normal; */
   font-family: "Lato", sans-serif;
+  text-shadow: 0px 0px 10px #000000;
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: normal;
@@ -88,6 +89,7 @@ body {
 .reveal h1 {
   font-size: 3.77em;
   font-weight: 400;
+  text-shadow: 0px 0px 10px #000000;
 }
 
 .reveal h2 {
@@ -95,7 +97,7 @@ body {
   /* text-shadow: x y blur color; */
   /* text-shadow: 0px 0px 20px #268bd2; */
   font-weight: 400;
-    text-shadow: 0px 0px 20px #000000;
+  text-shadow: 0px 0px 10px #000000;
   /* color: #268bd2; */
   /* background: white; */
   /* background-color: green; */
@@ -110,6 +112,7 @@ body {
   /* text-shadow: 0px 0px 5px #000; */
   font-weight: 400;
   text-transform: uppercase;
+  text-shadow: 0px 0px 10px #000000;
   text-decoration: underline;
   text-decoration-style: solid;
 }
@@ -117,6 +120,7 @@ body {
 .reveal h4 {
   font-size: 1em;
   font-weight: 400;
+  text-shadow: 0px 0px 10px #000000;
   text-decoration: underline;
 }
 
@@ -126,6 +130,7 @@ body {
   /* text-shadow: none;  */
   font-size: 1em;
   font-weight: 400;
+  text-shadow: 0px 0px 10px #000000;
 }
 
 /*********************************************
